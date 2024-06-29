@@ -5,6 +5,22 @@ build-backend = "hatchling.build"
 [project]
 name = "notebook-template"
 version = "1.0.0"
+authors = [{ name = "Florian Trautweiler" }]
+description = "A template for creating Jupyter notebooks with a shared Python package."
+readme = "README.md"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Private :: Do Not Upload"
+]
+
+[project.urls]
+Homepage = "https://medium.com/@flip.flo.games/how-to-share-python-code-between-jupyter-notebooks-b20b9898f748"
+Repository = "https://github.com/trflorian/notebook-template"
+Issues = "https://github.com/trflorian/notebook-template/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src"]
